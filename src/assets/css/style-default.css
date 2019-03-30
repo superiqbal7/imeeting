@@ -73,8 +73,18 @@
   100% {
     opacity: 1; } }
 
-main {
+.home main {
   height: calc(100vh - 168px); }
 
-.feature-item i.fa {
+.home .feature-item i.fa {
   font-size: 60px; }
+
+.meetings .search-box {
+  position: relative; }
+  .meetings .search-box i.fa.fa-search {
+    position: absolute;
+    top: 11px;
+    right: 13px; }
+
+.meetings main {
+  height: calc(100vh - 222px); }

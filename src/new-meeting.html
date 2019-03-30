@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="shortcut icon" href="assets/img/icons/favicon.png">
+<meta name="author" content="Shakil Ahmed">
+    <!-- BOOTSTRAP -->
+<link rel="stylesheet" href="assets/vendor/twitter-bootstrap/bootstrap.min.css" />
+
+<!-- FONT AWESOME -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'/>
+
+<!-- GOOGLE FONT -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700" rel="stylesheet"/>
+
+<!-- MAIN STYLESHEET  -->
+<link rel="stylesheet" href="assets/css/style-default.css"/>
+
+    <title>New Meeting</title>
+</head>
+
+<body class="new-meeting">
+    <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a href="index.html" class="navbar-brand">DDCM</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ml-auto">
+                <li><a href="#" class="nav-link">Welcome Admin</a></li>
+                <li><a href="#" class="nav-link">Sign Out</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#myNav2"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav2">
+            <ul class="navbar-nav">
+                <li><a href="meetings.html" class="nav-link">Meetings</a></li>
+                <li><a href="#" class="nav-link">Calender</a></li>
+                <li><a href="#" class="nav-link">Document Library</a></li>
+                <li><a href="#" class="nav-link">Admin Tools</a></li>
+                <li><a href="#" class="nav-link">My Profile</a></li>
+                <li><a href="#" class="nav-link">Help</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    <main>
+        <div class="container">
+            <div class="py-5 form">
+                <h2>Meeting Details</h2>
+                <form class="mt-4">
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Meeting Title</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Meeting Type</label>
+                        <div class="col-sm-8">
+                            <select id="inputState" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>Marketing</option>
+                                <option>Tech</option>
+                                <option>Support</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Venue</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Send Reminder</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Meeting Details</label>
+                        <div class="col-sm-8">
+                            <textarea rows="5" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">Notes for Perticipants</label>
+                        <div class="col-sm-8">
+                            <textarea rows="3" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-success">Schedule New Meeting</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    <nav class="navbar navbar-expand navbar-light bg-light">
+        <a href="#">DDCM Version 1.01</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li><a href="#" class="nav-link">Status</a></li>
+                <li><a href="#" class="nav-link">Privacy & Terms</a></li>
+                <li><a href="#" class="nav-link">Contact Us</a></li>
+                <li><a href="#" class="nav-link">English</a></li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+</body>
+
+</html>

@@ -3,6 +3,8 @@ var html_files = [
         "about.html",
         "contact.html",
         "index.html",
+        "new-meeting.html",
+        "meetings.html"
     ]
 
 let gulp = require('gulp'),

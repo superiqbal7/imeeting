@@ -19,10 +19,10 @@
 <!-- MAIN STYLESHEET  -->
 <link rel="stylesheet" href="assets/css/style-default.css"/>
 
-    <title>Home</title>
+    <title>Meetings</title>
 </head>
 
-<body class="home">
+<body class="meetings">
     <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a href="index.html" class="navbar-brand">DDCM</a>
@@ -49,25 +49,26 @@
     </nav>
 </header>
 
-    <main class="py-5 d-flex align-items-center justify-content-center">
-        <div class="main-wrapper">
-            <div class="text-center">
-                <h2>Welcome to DDCM</h2>
-                <p>To get started with DDCM, you may do any of the following</p>
-            </div>
-            <div class="d-flex justify-content-center">
-                <div class="text-center px-5 py-4 feature-item">
-                    <i class="fa fa-user"></i>
-                    <p class="my-2">Invite colleagues from the Accounts tab</p>
-                    <a href="#">Show me</a>
-                </div>
-                <div class="text-center px-5 py-4 feature-item">
-                    <i class="fa fa-calendar"></i>
-                    <p class="my-2">Schedule meetings from the Meetings tab</p>
-                    <a href="#">Show me</a>
-                </div>
-            </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div>
+            <ul class="navbar-nav">
+                <li><a href="#" class="btn btn-primary mr-2">Current</a></li>
+                <li><a href="#" class="btn btn-secondary mr-2">Upcoming</a></li>
+                <li><a href="#" class="btn btn-secondary mr-2">Previous</a></li>
+                <li><a href="#" class="btn btn-secondary mr-2">Last 7 days</a></li>
+            </ul>
         </div>
+        <form action="#" class="ml-auto">
+            <div class="search-box">
+                <i class="fa fa-search"></i>
+                <input type="text" class="form-control" placeholder="Search Meeting">
+            </div>
+        </form>
+    </nav>
+
+    <main class="d-flex justify-content-center align-items-center">
+        <a href="new-meeting.html" class="btn btn-info mx-2">Schedule New Meeting</a>
+        <a href="#" class="btn btn-dark mx-2">Update Upcoming Meeting</a>
     </main>
 
     <footer>
@@ -83,18 +84,6 @@
         </div>
     </nav>
 </footer>
-
-    <!-- JQUERY   -->
-<script src="assets/vendor/jquery/jquery.min.js"></script>
-
-<!-- BOOTSTRAP   -->
-<script src="assets/vendor/twitter-bootstrap/bootstrap.min.js"></script>
-
-<!-- MAIN SCRIPT  -->
-<script src="assets/js/script.min.js"></script>
-
-<!-- CUSTOM SCRIPT  -->
-<script src="assets/js/custom.js"></script>
 </body>
 
 </html>
