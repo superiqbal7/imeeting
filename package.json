@@ -1,0 +1,38 @@
+{
+  "name": "ipaper",
+  "version": "1.0.0",
+  "description": "bootpack will help you to start your next project quickly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "start",
+    "html",
+    "project"
+  ],
+  "author": "Shakil Ahmed",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-inject-partials": "^1.0.4",
+    "gulp-minify": "^3.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-modify-css-urls": "^2.0.0",
+    "gulp-placeimg": "^1.0.0",
+    "gulp-read": "^1.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-wait": "0.0.2",
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^4.11.0",
+    "velar": "^1.0.2"
+  },
+  "dependencies": {}
+}

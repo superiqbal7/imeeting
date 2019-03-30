@@ -1,0 +1,91 @@
+.about-us-1 {
+    .sub {
+        margin-top: -6px;
+    }
+
+    .feature {
+        .feature-item-wrapper {
+            .feature-item {
+                color: white;
+                padding: 50px 30px;
+                background-color: #5b42c8;
+            }
+        }
+    }
+
+    .team {
+        .team-card {
+            .bg-1 {
+                background: #03b875;
+            }
+        
+            .bg-2 {
+                background: #2e77fe;
+            }
+        
+            .bg-3 {
+                background: #3b5999;
+            }
+        
+            .bg-4 {
+                background: #c73044;
+            }
+        }
+    }
+}
+
+// CSS FOR ABOUT US 2
+.about-us-2 {
+    .about-us-content {
+        h3 {
+            margin-top: -6px;
+        }
+    }
+    .feature-area {
+        .feature-item-wrapper {
+            .feature-item {
+                background: #5b42c8;
+                opacity: 0.9;
+                padding: 50px 30px;
+                color: white;
+            }
+        }
+    }
+
+    .team-area {
+        background: #f3f2f8;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .about-us-1 {
+        .feature {
+            .feature-item-wrapper {
+                .feature-item {
+                    &.wd {
+                        height: 290px;
+                    }
+
+                    &.mt {
+                        margin-top: 15px;
+                        padding: 35px 30px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .about-us-1 {
+        .feature {
+            .feature-item-wrapper {
+                .feature-item {
+                    &.mt {
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

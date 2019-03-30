@@ -1,0 +1,291 @@
+.blog-classic {
+    background: #f9f9fb;
+
+    .feature,
+    .popular {
+        .feature-single {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+            height: 100%;
+
+            &.one {
+                background: url('../img/feature.jpg');
+            }
+            &.two {
+                background: url('../img/nature.jpg');
+            }
+            &.three {
+                background: url('../img/nature2.jpg');
+            }
+
+            a {
+                background: rgba($color: #000000, $alpha: 0.6);
+                height: 100%;
+                color: white;
+                text-decoration: none;
+                display: block;
+                padding: 30px;
+                transition: 0.1s ease-in;
+
+                &:hover {
+                    background: rgba($color: #000000, $alpha: 0.4);
+                }
+
+                time {
+                    margin-bottom: 15px;
+                    display: block;
+                }
+
+                h4 {
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .feature-list-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                font-weight: bold;
+                font-size: 10px;
+            }
+        }
+
+        ul.feature-list {
+            list-style: none;
+            padding: 0px;
+
+            li {
+                margin-top: 20px;
+
+                &:first-child {
+                    margin-top: 10px;
+                }
+
+                time {
+                    font-size: 14px;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .categories-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -6px;
+    }
+
+    .categories-slider {
+        .category-thumb {
+            width: 100%;
+            height: 250px;
+            border-radius: 7px;
+            box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.3);
+
+            &.one {
+                background: rgba(255, 0, 0, 0.6);
+            }
+            &.two {
+                background: #498afe;
+            } 
+            &.three {
+                background: #59f5dd;
+            }
+            &.four {
+                background: #ffffbd;
+            }
+            &.five {
+                background: #e06098;
+            }
+            &.six {
+                background: #6f57e1;
+            }
+            &.seven {
+                background: #e793e8;
+            }
+        }
+
+        h4 {
+            margin-top: 15px;
+        }
+    }
+
+    .popular {
+        .blog-item {
+            height: 140px;
+            background: white;
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 7px;
+            transition: 0.1s ease-in;
+            display: block;
+            text-decoration: none;
+
+            &:hover {
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+
+    .most-viewed {
+        .categories-title {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        article {
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.1s ease-in;
+
+            &:hover {
+                box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.2);
+            }
+
+            .article-content {
+                padding: 30px;
+            }
+
+            figure {
+                margin: 0px;
+            }
+        }
+    }
+}
+
+.blog-grid {
+    main {
+        background: #f2f2fa;
+
+        .blog-listing {
+            .blog-item {
+                figure {
+                    max-height: 263px;
+                    overflow: hidden;
+                }
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .blog-classic {
+        .popular {
+            .blog-item {
+                height: 160px;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .blog-classic {
+
+        .feature,
+        .popular {
+            .feature-single {
+                a {
+                    padding: 40px;
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        .popular {
+            .blog-item {
+                padding: 20px;
+            }
+        }
+
+        .most-viewed {
+            article {
+                display: flex;
+                align-items: center;
+
+                figure {
+                    border-radius: 0px 7px 7px 0px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .blog-classic {
+
+        .feature,
+        .popular {
+            .feature-single {
+                a {
+                    padding: 60px;
+                }
+            }
+
+            .feature-list-title {
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .popular {
+            .blog-item {
+                height: 200px;
+                padding: 30px;
+            }
+        }
+
+        .most-viewed {
+            article {
+                align-items: flex-start;
+
+                figure {
+                    border-radius: 0px;
+                    order: 2;
+                }
+
+                .article-content {
+                    padding: 45px;
+                    order: 1;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .blog-classic {
+        .most-viewed {
+            article {
+                .article-content {
+                    padding: 60px;
+                }
+            }
+        }
+    }
+}
